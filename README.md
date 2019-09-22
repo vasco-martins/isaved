@@ -1,16 +1,13 @@
-# testproject
+# I saved
 
-A new Flutter project.
+![Rotato Snapshot](/Users/vascomartins/Documents/Rotato Snapshot.png)
 
-## Getting Started
+A Flutter app that calculates how much you save with your diet costumes.
 
-This project is a starting point for a Flutter application.
+### About
 
-A few resources to get you started if this is your first Flutter project:
+This app was built in the course of a workshop lead by Renan Araújo (https://github.com/renancaraujo) and Filipe Barroso (https://github.com/OldMetalmind)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Setup
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To install this app, you need to have flutter installed. Then, create a firebase project and add your google-services.
