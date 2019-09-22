@@ -1,6 +1,6 @@
 # I saved
 
-![Rotato Snapshot](/Users/vascomartins/Documents/Rotato Snapshot.png)
+![llkqEZA](https://i.imgur.com/llkqEZA.png)
 
 A Flutter app that calculates how much you save with your diet costumes.
 
