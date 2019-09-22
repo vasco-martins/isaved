@@ -12,6 +12,7 @@ pubspec.lock
 doc/api/
 
 android/google-services.json
+android/key.properties
 
 # Avoid committing generated Javascript files:
 *.dart.js
