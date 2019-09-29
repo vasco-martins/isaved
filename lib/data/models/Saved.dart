@@ -33,8 +33,6 @@ class Saved with ChangeNotifier {
         return _days * 41639.0;
       case 'vegetarian':
         return _days * 6750.0;
-      case 'carnivore':
-        return 0;
     }
   }
 
@@ -44,8 +42,6 @@ class Saved with ChangeNotifier {
         return _days.toDouble();
       case 'vegetarian':
         return _days * 0.75;
-      case 'carnivore':
-        return 0;
     }
   }
 
@@ -55,8 +51,6 @@ class Saved with ChangeNotifier {
         return _days * 30.0;
       case 'vegetarian':
         return _days * 22.5;
-      case 'carnivore':
-        return 0;
     }
   }
 
@@ -71,8 +65,6 @@ class Saved with ChangeNotifier {
     _animals = calcAnimalsSaved();
     _land = calcLandSaved();
     _water = calcWaterSaved();
-    print(_animals);
-
     notifyListeners();
   }
 }
