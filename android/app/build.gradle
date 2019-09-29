@@ -56,10 +56,10 @@ android {
     signingConfigs {
         //TODO: INSERT HERE YOUR KEY
         release {
-            keyAlias ''
-            keyPassword ''
-            storeFile file("")
-            storePassword ''
+            keyAlias 'key'
+            keyPassword 'naovaisvais'
+            storeFile file("/Users/vascomartins/key.jks")
+            storePassword 'naovaisvais'
         }
     }
     buildTypes {
