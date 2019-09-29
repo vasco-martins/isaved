@@ -1,7 +1,4 @@
 import 'dart:async';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -45,7 +42,7 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             buildHeader(context),
             Container(
-              height: 50,
+              height: 30,
             ),
             buildJustByBeing(),
             Container(
@@ -58,12 +55,14 @@ class _HomeState extends State<Home> {
                       return Column(
                         children: <Widget>[
                           buildList(
-                              Ionicons.getIconData("md-water"),
-                              saved.water.toStringAsFixed(2) +
+                              Ionicons.getIconData(
+                                "md-water",
+                              ),
+                              saved.water.toStringAsFixed(0) +
                                   " litters of watter"),
                           buildList(
                             MaterialIcons.getIconData("pets"),
-                            saved.animals.toStringAsFixed(2) + " animals",
+                            saved.animals.toStringAsFixed(0) + " animals",
                           ),
                           buildList(MaterialIcons.getIconData("landscape"),
                               saved.land.toStringAsFixed(2) + " sqm of forest"),
@@ -135,10 +134,11 @@ class _HomeState extends State<Home> {
   Container buildHeader(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 250,
+      height: 200,
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage("assets/images/background.jpg"),
+            image: NetworkImage(
+                "https://images.pexels.com/photos/1418356/pexels-photo-1418356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
                 Colors.black.withOpacity(0.4), BlendMode.darken)),
@@ -158,6 +158,7 @@ class _HomeState extends State<Home> {
 
   RichText buildJustByBeing() {
     return RichText(
+      textAlign: TextAlign.center,
       text: TextSpan(
           text: "By being ",
           style: TextStyle(
@@ -185,7 +186,7 @@ class _HomeState extends State<Home> {
     return ListTile(
       leading: Icon(
         icon,
-        color: Colors.blue,
+        color: Colors.green,
         size: 40.0,
       ),
       title: Text(
