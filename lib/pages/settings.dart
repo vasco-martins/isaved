@@ -46,12 +46,10 @@ class _SettingsState extends State<Settings> {
                 buttonLables: [
                   "Vegan",
                   "Vegetarian",
-                  "Carnivore",
                 ],
                 buttonValues: [
                   "Vegan",
                   "Vegetarian",
-                  "Carnivore",
                 ],
                 radioButtonValue: (value) {
                   setState(() {
