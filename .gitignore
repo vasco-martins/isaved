@@ -5,6 +5,7 @@
 .vscode/
 .dart_tool/
 .packages
+.flutter-plugins
 build/
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
@@ -24,3 +25,5 @@ android/key.properties
 *.js_
 *.js.deps
 *.js.map
+.flutter-plugins
+.DS_Store
