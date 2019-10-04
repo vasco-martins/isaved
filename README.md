@@ -8,6 +8,6 @@ A Flutter app that calculates how much you save with your diet costumes.
 
 This app was built in the course of a workshop lead by Renan Araújo (https://github.com/renancaraujo) and Filipe Barroso (https://github.com/OldMetalmind)
 
-### Setup
+### Play Store
+You can download it here: [Google Play Store](https://play.google.com/store/apps/details?id=com.se3me.isaved)
 
-To install this app, you need to have flutter installed. Then, create a firebase project and add your google-services.
